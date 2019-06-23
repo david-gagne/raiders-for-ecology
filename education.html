@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Volunteer – St. Thomas Aquinas Raiders for Ecology</title>
+    <link rel="shortcut icon" href="img/sta-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+    <!-- Production Vue.js (uncomment when ready) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script> -->
+    <!-- Development Vue.js (remove when pushing to production) -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+
+    <!-- Wrapper div for header navigation elements of all breakpoints -->
+    <div id="header" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; show-on-up: true"
+        style="border-bottom: 1px solid #044B7F">
+
+        <div class="uk-background-primary header-bg" uk-grid>
+            <div class="uk-width-1-2">
+                <nav class="uk-navbar-container" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="index.html">
+                                    <img src="img/sta-logo-full.svg" width="150em" alt="">
+                                </a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Desktop navigation only -->
+            <div class="uk-width-1-2 uk-visible@m" uk-grid>
+                <div class="uk-width-1-2 uk-divider-vertical uk-flex uk-flex-middle" style="padding-left: 20px;">
+                    <nav class="uk-navbar-container uk-width-1-1" uk-navbar>
+                        <ul class="uk-nav">
+                            <li><a class="uk-padding-remove" href="">Volunteer</a></li>
+                            <li><a class="uk-padding-remove" href="">Education</a></li>
+                            <li><a class="uk-padding-remove" href="">Photo gallery</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="uk-width-1-2 uk-flex uk-flex-middle" style="padding-left: 20px">
+                    <nav class="uk-navbar-container" uk-navbar>
+                        <ul class="uk-nav">
+                            <li><a class="uk-padding-remove playfair" href="">About</a></li>
+                            <li><a class="uk-padding-remove playfair" href="">How to contribute</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Mobile navigation only -->
+            <div class="uk-width-1-2 uk-hidden@m uk-margin-remove-top" uk-grid>
+                <div class="uk-width-1-1 uk-divider-vertical@m uk-flex uk-flex-middle uk-flex-right">
+                    <nav class="uk-navbar-container" uk-navbar>
+                        <div class="uk-navbar-right">
+                            <ul class="uk-nav">
+                                <li><a class="uk-text-primary uk-margin-top uk-margin-remove-top" href="#menuModal"
+                                        uk-toggle>Menu</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-background-primary" uk-grid>
+        <div class="uk-width-1-2 uk-visible@s">
+            <div class="uk-container uk-flex uk-flex-middle uk-flex-center uk-height-large uk-margin-large-top">
+                <div>
+                    <h1 class="uk-heading-medium uk-text-center">
+                        We <span uk-icon="icon: heart; ratio: 3"></span> Social Ecology
+                    </h1>
+                    <div class="uk-width-1-1 uk-flex uk-flex-center">
+                        <h2 class="uk-text-center uk-text-large">
+                            The mission of St. Thomas Aquinas
+                            Raiders for Ecology is
+                            to get people educated engaged, and involved in the environmental and social issues that
+                            are
+                            right in their
+                            backyard.
+                        </h2>
+                    </div>
+                    <div class="uk-width-1-1 uk-flex uk-flex-center">
+                        <a href="" class="uk-button uk-button-text uk-text-bold">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Small Mobile -->
+        <div class="uk-width-1-1 uk-hidden@s" uk-height-viewport uk-overflow-auto="selContainer: .uk-container;">
+            <div class="uk-container uk-width-1-1 uk-background-secondary uk-padding-small uk-inline uk-animation-toggle uk-visible-toggle"
+                uk-height-viewport="offset-top: true" style="border-bottom: 1px solid #044B7F">
+                <div>
+                    <h1 class="uk-heading-medium uk-margin-large-top uk-text-uppercase uk-margin-remove-bottom">
+                        Cleo Institute</h1>
+                    <p class="uk-text-primary uk-margin-remove-top">
+                        The CLEO Institute is a 501(c)(3) non-profit organization that drives climate action through
+                        community education and engagement.
+
+                        (Source: <a href="https://www.cleoinstitute.org/about-1">CLEO Institute</a> )
+                    </p>
+                </div>
+                <div class="uk-height-large uk-background-cover uk-background-top-center uk-light"
+                    data-src="https://scontent.fmia1-2.fna.fbcdn.net/v/t1.0-9/42497114_1829275200461190_6243446825500540928_n.jpg?_nc_cat=110&_nc_ht=scontent.fmia1-2.fna&oh=f8767cd3610b300a310bd90460709423&oe=5D7F4F0F"
+                    uk-img>
+                </div>
+                <div class="uk-animation-fade uk-overlay-default uk-position-cover uk-hidden-hover">
+                </div>
+                <div class="uk-animation-fade uk-overlay uk-position-center uk-dark uk-hidden-hover">
+                    <h1 class="uk-heading-medium">
+                        <a class="uk-text-primary" href="https://www.cleoinstitute.org/the-science"
+                            target="_blank">Visit
+                            Resource <span uk-icon="icon: link; ratio: 3"></span> </a>
+                    </h1>
+                </div>
+            </div>
+            <div class="uk-container uk-width-1-1 uk-background-secondary uk-padding-small uk-inline uk-animation-toggle uk-visible-toggle"
+                uk-height-viewport="offset-top: true">
+                <div>
+                    <h1 class="uk-heading-small uk-margin-large-top uk-text-uppercase uk-margin-remove-bottom">
+                        FIU <span class="uk-text-large">Institute of Water and Environment</span>
+                    </h1>
+                    <p class="uk-text-primary uk-margin-remove-top">
+                        InWE supports cross-cutting research and pioneering technologies that address critical water and
+                        environmental issues on a local, national and worldwide scale. The Institute leverages expertise
+                        from chemists, social scientists, economists, biologists, engineers and architects in an effort
+                        to support effective interdisciplinary solutions to these challenges. <br><br> (Source: <a
+                            href="https://inwe.fiu.edu/research/index.html">FIU INWE</a> )
+                    </p>
+                </div>
+                <div class="uk-height-large uk-background-cover uk-background-top-center uk-light"
+                    data-src="https://scontent.fmia1-1.fna.fbcdn.net/v/t1.0-9/56271625_840914626270106_4642356074945445888_n.jpg?_nc_cat=102&_nc_ht=scontent.fmia1-1.fna&oh=1fe295b98d480bd15ec15d41b5042a1a&oe=5DC60CE8"
+                    uk-img>
+                </div>
+                <div class="uk-animation-fade uk-overlay-default uk-position-cover uk-hidden-hover">
+                </div>
+                <div class="uk-animation-fade uk-overlay uk-position-center uk-dark uk-hidden-hover">
+                    <h1 class="uk-heading-medium">
+                        <a class="uk-text-primary" href="https://inwe.fiu.edu/research/index.html" target="_blank">Visit
+                            Resource <span uk-icon="icon: link; ratio: 3"></span> </a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop breakpoint -->
+        <div class="uk-width-1-2 uk-visible@s uk-divider-vertical uk-padding-remove" uk-height-viewport
+            uk-overflow-auto="selContainer: .uk-container;">
+            <div class="uk-container uk-width-1-1 uk-background-secondary uk-padding-small uk-inline uk-animation-toggle uk-visible-toggle"
+                uk-height-viewport style="border-bottom: 1px solid #044B7F">
+                <div>
+                    <h1 class="uk-heading-medium uk-margin-large-top uk-text-uppercase uk-margin-remove-bottom">
+                        Cleo Institute</h1>
+                    <p class="uk-text-primary uk-margin-remove-top">
+                        The CLEO Institute is a 501(c)(3) non-profit organization that drives climate action through
+                        community education and engagement.
+
+                        (Source: <a href="https://www.cleoinstitute.org/about-1">CLEO Institute</a> )
+                    </p>
+                </div>
+                <div class="uk-height-large uk-background-cover uk-background-top-center uk-light"
+                    data-src="https://scontent.fmia1-2.fna.fbcdn.net/v/t1.0-9/42497114_1829275200461190_6243446825500540928_n.jpg?_nc_cat=110&_nc_ht=scontent.fmia1-2.fna&oh=f8767cd3610b300a310bd90460709423&oe=5D7F4F0F"
+                    uk-img>
+                </div>
+                <div class="uk-animation-fade uk-overlay-default uk-position-cover uk-hidden-hover">
+                </div>
+                <div class="uk-animation-fade uk-overlay uk-position-center uk-dark uk-hidden-hover">
+                    <h1 class="uk-heading-medium">
+                        <a class="uk-text-primary" href="https://www.cleoinstitute.org/the-science"
+                            target="_blank">Visit
+                            Resource <span uk-icon="icon: link; ratio: 3"></span> </a>
+                    </h1>
+                </div>
+
+            </div>
+            <div class="uk-container uk-width-1-1 uk-background-secondary uk-padding-small uk-inline uk-animation-toggle uk-visible-toggle"
+                uk-height-viewport="offset-top: true">
+                <div>
+                    <h1 class="uk-heading-small uk-margin-large-top uk-text-uppercase uk-margin-remove-bottom">
+                        FIU <span class="uk-text-large">Institute of Water and Environment</span>
+                    </h1>
+                    <p class="uk-text-primary uk-margin-remove-top">
+                        InWE supports cross-cutting research and pioneering technologies that address critical water and
+                        environmental issues on a local, national and worldwide scale. The Institute leverages expertise
+                        from chemists, social scientists, economists, biologists, engineers and architects in an effort
+                        to support effective interdisciplinary solutions to these challenges. <br><br> (Source: <a
+                            href="https://inwe.fiu.edu/research/index.html">FIU INWE</a> )
+                    </p>
+                </div>
+                <div class="uk-height-large uk-background-cover uk-background-top-center uk-light"
+                    data-src="https://scontent.fmia1-1.fna.fbcdn.net/v/t1.0-9/56271625_840914626270106_4642356074945445888_n.jpg?_nc_cat=102&_nc_ht=scontent.fmia1-1.fna&oh=1fe295b98d480bd15ec15d41b5042a1a&oe=5DC60CE8"
+                    uk-img>
+                </div>
+                <div class="uk-animation-fade uk-overlay-default uk-position-cover uk-hidden-hover">
+                </div>
+                <div class="uk-animation-fade uk-overlay uk-position-center uk-dark uk-hidden-hover">
+                    <h1 class="uk-heading-medium">
+                        <a class="uk-text-primary" href="https://inwe.fiu.edu/research/index.html" target="_blank">Visit
+                            Resource <span uk-icon="icon: link; ratio: 3"></span> </a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile menu (hidden on desktop) -->
+    <div id="menuModal" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+
+            <nav class="uk-navbar-container" style="background-color: #fff" uk-navbar>
+                <div class="uk-navbar">
+                    <a href="" class=" uk-navbar-item uk-logo">
+                        <img data-src="img/sta-logo-full.svg" width="150em" alt="" uk-img style="padding-top: 18px">
+                    </a>
+                </div>
+            </nav>
+            <!-- </div> -->
+            <div class="uk-container uk-container-expand uk-flex uk-flex-middle uk-flex-center" style="height: 40vh">
+                <ul class="uk-nav-default uk-nav-center uk-nav-parent-icon" uk-nav>
+                    <li><a class="uk-heading-small uk-text-primary" style="font-family: 'Muli'" href="#">Events</a>
+                    </li>
+                    <li><a class="uk-heading-small uk-text-primary" style="font-family: 'Muli'" href="#">Learn</a>
+                    </li>
+                    <li><a class="uk-heading-small uk-text-primary" style="font-family: 'Muli'" href="#">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="uk-container uk-container-expand uk-background-primary uk-flex uk-flex-middle uk-flex-center"
+                style="height: 50vh">
+                <ul class="uk-nav-default uk-nav-center uk-nav-parent-icon" uk-nav>
+                    <li><a class="uk-heading-medium uk-text-primary" href="#">About</a>
+                    </li>
+                    <li><a class="uk-heading-medium uk-text-primary" href="#">How to help</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
