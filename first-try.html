@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eco-Raiders</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+    <!-- Production Vue.js (uncomment when ready) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script> -->
+    <!-- Development Vue.js (remove when pushing to production) -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+
+    <div class="uk-background-primary" uk-height-viewport="true">
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; show-on-up: true">
+            <nav class="uk-navbar-container uk-navbar-primary" uk-navbar>
+                <div class="uk-navbar-left uk-width-1-2">
+                    <a href="" class="uk-navbar-item uk-logo">
+                        <img data-src="img/sta-logo-full.svg" width="150em" alt="" uk-img>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu (not visible on mobile devices) -->
+                <div class="uk-navbar-right uk-width-1-2 uk-margin-remove uk-visible@m">
+                    <div id="headerCol2"
+                        class="uk-flex uk-flex-middle uk-width-1-2 uk-margin-remove-vertical uk-divider-vertical uk-animation-toggle uk-visible-toggle header-bg">
+                        <!-- col 2 nav -->
+                        <ul class="uk-nav uk-margin-left">
+                            <li><a class="uk-padding-remove" href="">Events</a></li>
+                            <li><a class="uk-padding-remove" href="">Learn</a></li>
+                            <li><a class="uk-padding-remove" href="">Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div id="headerCol3"
+                        class="uk-flex uk-flex-middle uk-width-1-2 uk-margin-remove-vertical uk-divider-vertical uk-animation-toggle uk-visible-toggle header-bg">
+                        <!-- col 3 nav -->
+                        <ul class="uk-nav uk-margin-left">
+                            <li><a class="uk-padding-remove playfair" href="">About</a></li>
+                            <li><a class="uk-padding-remove playfair" href="">How to help</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu (not visible on desktop) -->
+                <div
+                    class="uk-navbar-right uk-width-1-2 uk-margin-remove uk-hidden@m uk-divider-vertical uk-flex uk-flex-right">
+                    <ul class="uk-navbar-nav">
+                        <li><a class="uk-text-primary" href="#menuModal" uk-toggle>Menu</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="uk-section uk-padding-remove uk-margin-remove uk-width-1-1" uk-grid>
+
+            <div class="uk-width-1-2 uk-margin-remove uk-padding-remove uk-visible@m" uk-grid>
+                <div class="uk-container">
+                    <h1 class="uk-heading-medium uk-text-center uk-margin-large-top">
+                        STA <span uk-icon="icon: heart; ratio: 3"></span> Social Ecology
+                    </h1>
+                    <h2 class="uk-text-center uk-text-small">
+                        The mission of St. Thomas Aquinas
+                        Raiders for Ecology is
+                        to get people educated engaged, and involved in the environmental and social issues that are
+                        right in their
+                        backyard.
+                    </h2>
+                    <div class="uk-width-1-1 uk-flex uk-flex-center">
+                        <button class="uk-button uk-button-text uk-text-bold">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-1@s uk-margin-remove uk-padding-remove uk-hidden@m" uk-grid>
+                <div class="uk-container">
+                    <h1 class="uk-heading-medium uk-text-center uk-margin-large-top">
+                        STA <span uk-icon="icon: heart; ratio: 3"></span> Social
+                        Ecology
+                    </h1>
+                    <h2 class="uk-text-center uk-text-small">
+                        The mission of St. Thomas Aquinas
+                        Raiders for Ecology is
+                        to get people educated engaged, and involved in the environmental and social issues that are
+                        right in their
+                        backyard.
+                    </h2>
+                    <div class="uk-width-1-1 uk-flex uk-flex-center">
+                        <button class="uk-button uk-button-text uk-text-bold">Learn more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-width-1-2 uk-margin-remove uk-padding-remove" uk-grid uk-height-match>
+
+                <div id="bodyCol2"
+                    class="uk-width-1-2@m uk-width-1-1 uk-margin-remove-vertical uk-divider-vertical uk-padding-remove uk-inline uk-animation-toggle uk-visible-toggle"
+                    style="height: 100vh">
+                    <a href="learn.html" style="text-decoration: none;">
+                        <div class="uk-container uk-padding-small uk-margin-xlarge-top@m">
+                            <div>
+                                <p class="uk-text-primary text-medium uk-margin-remove">Latest article</p>
+                                <p class="uk-text-primary heading-xsmall uk-margin-remove uk-text-uppercase">
+                                    Ecology 101
+                                    <br>
+                                    for STA
+                                </p>
+
+                                <img class="uk-visible@m" data-src="img/ecology101.jpg" width="" height="" uk-img>
+                                <img class="uk-visible@s uk-hidden@m" data-src="img/ecology101-cropped.png" width=""
+                                    height="" uk-img>
+
+                                <div class="uk-animation-fade uk-overlay-default uk-position-cover uk-hidden-hover">
+                                </div>
+                                <div class="uk-animation-fade uk-overlay uk-position-center uk-dark uk-hidden-hover">
+                                    <h1 class="uk-heading-medium">View</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="bodyCol3"
+                    class="uk-width-1-2@m uk-visible@m uk-margin-remove-vertical uk-divider-vertical uk-padding-remove uk-inline uk-animation-toggle uk-visible-toggle">
+                    <a href="/events.html" style="text-decoration: none;">
+                        <div class="uk-container uk-padding-small uk-margin-medium-top">
+                            <img data-src="img/sta-beach-cleanup.jpg" width="" height="" alt="" uk-img>
+                            <p class="uk-text-small uk-text-primary">Beach cleanups are the best way to see the kind of
+                                waste
+                                that is floating around our oceans which can motivate us to make a change on what we are
+                                using in our homes.
+                            </p>
+                            <div class="uk-animation-fade uk-overlay-default uk-position-cover uk-hidden-hover">
+                            </div>
+                            <div class="uk-animation-fade uk-overlay uk-position-top uk-dark uk-hidden-hover">
+                                <h1 class="uk-heading-medium uk-text-center uk-margin-xlarge-top">View</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-section uk-padding-remove">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="img/sta-nature-slideshow01.jpg" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="img/sta-slideshow02.jpg" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="img/sta-slideshow03.jpg" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="img/sta-slideshow04.jpg" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="img/sta-slideshow05.jpg" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="img/sta-slideshow06.jpg" alt="" uk-cover>
+                    </li>
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                    uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                    uk-slideshow-item="next"></a>
+            </div>
+        </div>
+
+        <div class="uk-section uk-padding-remove uk-margin-remove uk-width-1-1 uk-height-large" uk-grid uk-height-match
+            uk-height-viewport="true">
+            <div class="uk-width-1-2 uk-flex uk-flex-middle uk-padding-remove" style="border-bottom: 1px solid #044B7F">
+                <div class="uk-container uk-container-large">
+                    <h1 class="uk-heading-medium uk-text-center">
+                        Show your support
+                    </h1>
+                    <h2 class="uk-text-center uk-text-small">
+                        Have you participated in any environmental activities? Post your pictures here! We want to see
+                        your
+                        experiences and the action you are taking towards improving our Earth. Help show everyone how
+                        easy it is to get started and how something as simple as planting some bee friendly flowers is
+                        a major
+                        step towards a healthy world. Click the button below to send your image so the world can see the
+                        good you've done!
+                    </h2>
+                    <div class="uk-flex uk-flex-center">
+                        <button id="photoSubmittalButton"
+                            class="uk-button uk-button-large uk-margin-medium-top uk-text-primary uk-"
+                            style="border: 1px solid #044B7F">Send in your
+                            photos</button>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-2 uk-divider-vertical uk-flex uk-flex-middle"
+                style="border-bottom: 1px solid #044B7F">
+                <div class="uk-container uk-container-large">
+                    <img data-src="img/sta-beach-kids.jpg" width="400px" height="" alt="" uk-img>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-section">
+            <div class="uk-container-expand uk-flex uk-flex-center uk-flex-top">
+                <div>
+                    <p class="uk-text-medium uk-text-primary uk-margin-medium-top uk-text-center">
+                        Stewarding the natural world
+                    </p>
+
+                    <p class="uk-text-center uk-text-small uk-text-primary uk-margin-small-bottom">
+                        Get some great resources in your inbox</p>
+                    <form style="border: 1px solid #044B7F">
+
+                        <div>
+                            <div uk-form-custom="target: true">
+                                <input id="emailRequestInput" class="uk-input uk-form-width-medium uk-width-1-1"
+                                    type="email" placeholder="Enter your email">
+                            </div>
+                            <button id="emailRequestButton" class="uk-button uk-text-primary"
+                                style="border-left: 1px solid #044B7F">Submit</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+            <div class="uk-flex uk-flex-center uk-flex-middle uk-height-small uk-background-primary">
+                <div>
+                    Made in collaboration with
+                    <a class="uk-logo" href="">
+                        <img data-src="img/grindfusion-lyla.svg" width="200em" height="" alt="" uk-img>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menuModal" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <!-- <div class="uk-modal-header" style="background-color: #fff; border-bottom: none" style="height: 20vh"> -->
+            <nav class="uk-navbar-container" style="background-color: #fff" uk-navbar>
+                <div class="uk-navbar">
+                    <a href="" class=" uk-navbar-item uk-logo">
+                        <img data-src="img/sta-logo-full.svg" width="150em" alt="" uk-img style="padding-top: 18px">
+                    </a>
+                </div>
+            </nav>
+            <!-- </div> -->
+            <div class="uk-container uk-container-expand uk-flex uk-flex-middle uk-flex-center" style="height: 40vh">
+                <ul class="uk-nav-default uk-nav-center uk-nav-parent-icon" uk-nav>
+                    <li><a class="uk-heading-medium uk-text-primary" style="font-family: 'Muli'" href="#">Events</a>
+                    </li>
+                    <li><a class="uk-heading-medium uk-text-primary" style="font-family: 'Muli'" href="#">Learn</a></li>
+                    <li><a class="uk-heading-medium uk-text-primary" style="font-family: 'Muli'" href="#">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="uk-container uk-container-expand uk-background-primary uk-flex uk-flex-middle uk-flex-center"
+                style="height: 50vh">
+                <ul class="uk-nav-default uk-nav-center uk-nav-parent-icon" uk-nav>
+                    <li><a class="uk-heading-medium uk-text-primary" href="#">About</a>
+                    </li>
+                    <li><a class="uk-heading-medium uk-text-primary" href="#">How to help</a></li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
