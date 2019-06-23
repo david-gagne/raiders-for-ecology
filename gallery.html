@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home – St. Thomas Aquinas Raiders for Ecology</title>
+    <link rel="shortcut icon" href="img/sta-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+    <!-- Production Vue.js (uncomment when ready) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script> -->
+    <!-- Development Vue.js (remove when pushing to production) -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+
+    <!-- Wrapper div for header navigation elements of all breakpoints -->
+    <div id="header" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; show-on-up: true">
+
+        <div class="uk-background-primary header-bg" uk-grid>
+            <div class="uk-width-1-2">
+                <nav class="uk-navbar-container" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="index.html">
+                                    <img src="img/sta-logo-full.svg" width="150em" alt="">
+                                </a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Desktop navigation only -->
+            <div class="uk-width-1-2 uk-visible@m" uk-grid>
+                <div class="uk-width-1-2 uk-divider-vertical uk-flex uk-flex-middle" style="padding-left: 20px">
+                    <nav class="uk-navbar-container uk-width-1-1" uk-navbar>
+                        <ul class="uk-nav">
+                            <li><a class="uk-padding-remove" href="volunteer.html">Volunteer</a></li>
+                            <li><a class="uk-padding-remove" href="education.html">Education</a></li>
+                            <li><a class="uk-padding-remove" href="gallery.html">Photo gallery</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="uk-width-1-2 uk-divider-vertical uk-flex uk-flex-middle" style="padding-left: 20px">
+                    <nav class="uk-navbar-container" uk-navbar>
+                        <ul class="uk-nav">
+                            <li><a class="uk-padding-remove playfair" href="">About</a></li>
+                            <li><a class="uk-padding-remove playfair" href="">How to contribute</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Mobile navigation only -->
+            <div class="uk-width-1-2 uk-hidden@m uk-margin-remove-top" uk-grid>
+                <div class="uk-width-1-1 uk-divider-vertical@m uk-flex uk-flex-middle uk-flex-right">
+                    <nav class="uk-navbar-container" uk-navbar>
+                        <div class="uk-navbar-right">
+                            <ul class="uk-nav">
+                                <li><a class="uk-text-primary uk-margin-top uk-margin-remove-top" href="#menuModal"
+                                        uk-toggle>Menu</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox (photo gallery) -->
+    <div class="uk-section uk-background-primary" uk-height-viewport>
+        <div class="uk-container-expand uk-flex uk-flex-center uk-flex-middle">
+            <div>
+
+                <h1 class="uk-heading-small uk-text-center">STA Raiders for Ecology Showing Their Support!</h1>
+                <p class="uk-text-center uk-text-primary">Click the button below to enter the gallery</p>
+                <p class="uk-text-center uk-text-primary">Don't forget to send your photos.</p>
+                <div class="uk-flex uk-flex-center uk-margin" uk-lightbox>
+                    <a class="uk-button uk-button-primary" href="img/superhelpful.jpeg"
+                        data-caption="Please submit photos. It'd be super helpful.">
+                        View Photo Gallery
+                    </a>
+                </div>
+
+                <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
+                    <div>
+                        <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                            data-src="https://scontent.fmia1-1.fna.fbcdn.net/v/t1.0-9/64458166_2324674427609408_7897855927133405184_n.jpg?_nc_cat=101&_nc_ht=scontent.fmia1-1.fna&oh=66c79c21e1f9291dde9082b4b378881e&oe=5D8E5310"
+                            uk-img>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                            data-src="https://scontent.fmia1-1.fna.fbcdn.net/v/t1.0-9/64586118_2324674614276056_5625223245729890304_n.jpg?_nc_cat=101&_nc_ht=scontent.fmia1-1.fna&oh=5f8a8a6bc61ea207a82e76318e9e74db&oe=5D8495F8"
+                            uk-img>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                            data-src="https://scontent.fmia1-2.fna.fbcdn.net/v/t1.0-9/50609355_2089190181157835_764447914616422400_n.jpg?_nc_cat=109&_nc_ht=scontent.fmia1-2.fna&oh=33257e237ec34cf887ecf943f0dac598&oe=5DC06887"
+                            uk-img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer section (Breakpoint: Mobile) -->
+        <footer class="uk-section uk-padding-remove uk-background-primary uk-height-medium uk-hidden@s">
+            <div class="uk-container uk-flex uk-flex-center">
+                <div>
+                    <p class="uk-text-medium uk-text-primary uk-margin-medium-top uk-text-center">
+                        Stewarding the natural world
+                    </p>
+
+                    <p class="uk-text-center uk-text-small uk-text-primary uk-margin-small-bottom">
+                        Get some great resources in your inbox
+                    </p>
+
+                    <form class="uk-flex uk-flex-center">
+                        <div uk-form-custom="target: true">
+                            <input id="emailRequestInput" class="uk-input" type="email" placeholder="Enter your email"
+                                style="border: 1px solid #044B7F; background-color: #fff">
+                        </div>
+                        <button id="emailRequestButton" class="uk-button uk-text-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer section (Breakpoint: Large Mobile - Desktop) -->
+        <footer class="uk-section uk-padding-remove uk-background-primary uk-height-medium uk-visible@s">
+            <div class="uk-container-expand" uk-grid>
+                <div class="uk-width-1-3 uk-invisible">col 1</div>
+                <div class="uk-width-1-3 uk-padding-remove">
+
+                    <p class="uk-text-medium uk-text-primary uk-margin-medium-top uk-text-center">
+                        Stewarding the natural world
+                    </p>
+
+                    <p class="uk-text-center uk-text-small uk-text-primary uk-margin-small-bottom">
+                        Get some great resources in your inbox
+                    </p>
+
+                    <form class="uk-flex uk-flex-center">
+
+                        <div uk-form-custom="target: true">
+                            <input id="emailRequestInput" class="uk-input uk-form-width-medium" type="email"
+                                placeholder="Enter your email"
+                                style="border: 1px solid #044B7F; background-color: #fff">
+                        </div>
+                        <button id="emailRequestButton" class="uk-button uk-text-primary">Submit</button>
+
+                    </form>
+
+                </div>
+                <div class="uk-width-1-3 uk-invisible">col 3</div>
+            </div>
+        </footer>
+
+        <!-- Mobile menu (hidden on desktop) -->
+        <div id="menuModal" class="uk-modal-full" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+
+                <nav class="uk-navbar-container" style="background-color: #fff" uk-navbar>
+                    <div class="uk-navbar">
+                        <a href="" class=" uk-navbar-item uk-logo">
+                            <img data-src="img/sta-logo-full.svg" width="150em" alt="" uk-img style="padding-top: 18px">
+                        </a>
+                    </div>
+                </nav>
+                <!-- </div> -->
+                <div class="uk-container uk-container-expand uk-flex uk-flex-middle uk-flex-center"
+                    style="height: 40vh">
+                    <ul class="uk-nav-default uk-nav-center uk-nav-parent-icon" uk-nav>
+                        <li><a class="uk-text-large uk-text-primary" style="font-family: 'Muli'"
+                                href="volunteer.html">Volunteer</a>
+                        </li>
+                        <li><a class="uk-text-large uk-text-primary" style="font-family: 'Muli'"
+                                href="education.html">Education</a>
+                        </li>
+                        <li><a class="uk-text-large uk-text-primary" style="font-family: 'Muli'" href="">Photo
+                                gallery</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-container uk-container-expand uk-background-primary uk-flex uk-flex-middle uk-flex-center"
+                    style="height: 50vh">
+                    <ul class="uk-nav-default uk-nav-center uk-nav-parent-icon" uk-nav>
+                        <li><a class="uk-text-large uk-text-primary playfair" href="">About</a>
+                        </li>
+                        <li><a class="uk-text-large uk-text-primary playfair" href="">How to contribute</a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+</body>
+
+</html>
