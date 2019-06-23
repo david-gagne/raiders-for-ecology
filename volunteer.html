@@ -75,7 +75,7 @@
     </div>
 
     <div class="uk-background-primary" uk-grid>
-        <div class="uk-width-1-2">
+        <div class="uk-width-1-2 uk-visible@s">
             <div class="uk-container uk-flex uk-flex-middle uk-flex-center uk-height-large uk-margin-large-top">
                 <div>
                     <h1 class="uk-heading-medium uk-text-center">
@@ -97,7 +97,58 @@
                 </div>
             </div>
         </div>
-        <div class="uk-width-1-2 uk-divider-vertical uk-padding-remove" uk-height-viewport
+
+        <!-- Small Mobile -->
+        <div class="uk-width-1-1 uk-hidden@s" uk-height-viewport uk-overflow-auto="selContainer: .uk-container;">
+            <div class="uk-container uk-width-1-1 uk-background-secondary uk-padding-small"
+                uk-height-viewport="offset-top: true" style="border-bottom: 1px solid #044B7F">
+                <div>
+                    <h1 class="uk-heading-medium uk-margin-large-top uk-text-uppercase uk-margin-remove-bottom">
+                        Volunteer</h1>
+                    <p class="uk-text-primary uk-margin-remove-top">
+                        Check out some of these resources for finding environmental volunteering events near you. From
+                        beach cleanups to fundraising, there's always something fun to do in your community to help the
+                        planet. All of the resources here are staffed by enthusiastic people who are happy to help you
+                        get involved or set up your own volunteering efforts. Feel free to reach out to and get active!
+                        This is what STA Raiders for Ecology is all about. If you have any questions, please let us
+                        know!
+                    </p>
+                </div>
+                <div class="uk-height-large uk-background-cover uk-background-top-center uk-light"
+                    data-src="img/volunteering.jpg" uk-img>
+                </div>
+            </div>
+            <div class="uk-container uk-width-1-1 uk-background-secondary uk-padding-small uk-inline uk-animation-toggle uk-visible-toggle"
+                uk-height-viewport="offset-top: true">
+                <div>
+                    <h1 class="uk-heading-small uk-margin-large-top uk-text-uppercase uk-margin-remove-bottom">
+                        Hands On Broward</h1>
+                    <p class="uk-text-primary uk-margin-remove-top">
+                        HandsOn Broward mobilizes thousands of people each year to revitalize schools, parks,
+                        playgrounds, nonprofits and neighborhoods. Our volunteers create art in public spaces, build
+                        sustainable gardens, teach financial literacy, respond to disasters and work to protect the
+                        environment. Opportunities to make an impact are available year-round on a daily basis to people
+                        of all ages. <br><br> (Source: <a href="https://www.handsonbroward.org/about_us">Hands on
+                            Broward</a> )
+                    </p>
+                </div>
+                <div class="uk-height-large uk-background-cover uk-background-top-center uk-light"
+                    data-src="https://scontent-mia3-2.xx.fbcdn.net/v/t1.0-9/52595429_2079304092159238_6309911148053397504_o.jpg?_nc_cat=109&_nc_ht=scontent-mia3-2.xx&oh=fdd7905072c72d8995a042ea2a5a5562&oe=5D876418"
+                    uk-img>
+                </div>
+                <div class="uk-animation-fade uk-overlay-default uk-position-cover uk-hidden-hover">
+                </div>
+                <div class="uk-animation-fade uk-overlay uk-position-center uk-dark uk-hidden-hover">
+                    <h1 class="uk-heading-medium">
+                        <a class="uk-text-primary" href="https://www.handsonbroward.org/search" target="_blank">Visit
+                            Resource <span uk-icon="icon: link; ratio: 3"></span> </a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop breakpoint -->
+        <div class="uk-width-1-2 uk-visible@s uk-divider-vertical uk-padding-remove" uk-height-viewport
             uk-overflow-auto="selContainer: .uk-container;">
             <div class="uk-container uk-width-1-1 uk-background-secondary uk-padding-small"
                 uk-height-viewport="offset-top: true" style="border-bottom: 1px solid #044B7F">
