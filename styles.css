@@ -11,6 +11,10 @@
   border-bottom-color: #D5A042 !important;
 }
 
+.vh120 {
+  min-height: 120vh !important;
+}
+
 .text-medium {
   font-size: 20px;
   font-weight: bold;
